@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <header>
+    <span class="Score">Score: {{score}}</span>
+    <span ng-repeat="live in lives" class="Lives">
+      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+</span>
+  </header>
+
+  <div class="row">
+    <div class="balloon">
+      <div class="col col-md-3 col-xs-6" ng-click="checkAnswer(currentQuestion.answers[0])"><span class="answers">{{currentQuestion.answers[0]}}</span>
+      </div>
+      <div class="col col-md-3 col-xs-6" ng-click="checkAnswer(currentQuestion.answers[1])"><span class="answers">{{currentQuestion.answers[1]}}</span>
+      </div>
+      <div class="col col-md-3 col-xs-6" ng-click="checkAnswer(currentQuestion.answers[2])"><span class="answers">{{currentQuestion.answers[2]}}</span>
+      </div>
+      <div class="col col-md-3 col-xs-6" ng-click="checkAnswer(currentQuestion.answers[3])"><span class="answers">{{currentQuestion.answers[3]}}</span>
+      </div>
+    </div>
+  </div>
+  <h1 id="question">{{currentQuestion.question}} <br></h1>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="intro" class="col col-md-offset-1 col-md-10">{{playerStatus}}</div>
+        </div>
+
+        <div class="row">
+          <div class="startGameButton" class="col col-md-offset-3 col-md-6" ng-click="startGame()">Start New Game</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
