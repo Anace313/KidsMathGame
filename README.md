@@ -4,7 +4,11 @@
 
 - It was a simple interview test project that I have build very fast for that purpose.
 
-- You can test the game from dist folder ... and see the code is in the app folder. 
+- You can test the game from dist folder ... and see the code is in the app folder.
+
+### Screenshot
+
+![image](app/images/screenshot.png)
 
 ### License
 
